@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root{
+    --fuente-principal: "Young serif", sans-serif;
+    --fuente-secundaria:"outfit", serif;
+    --color-fondo:  hsl(30, 54%, 90%);
+    --color-tiempo: hsl(330, 100%, 98%);
+    --color-texto-tiempo: hsl(332, 51%, 32%);
+    --Color-texto:  hsl(24, 5%, 18%); 
+    --bold: hsl(30, 10%, 34%);
+    --titles: hsl(14, 45%, 36%);
+    --linea: hsl(30, 18%, 87%); 
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    color: var(--bold);
+}
+
+body {
+    background-color: var(--color-fondo)
+}
+
+main{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} 
+
+.contenedor-principal{
+    background-color: #ffffff;
+    width: 736px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px;
+    padding: 40px;
+    gap: 40px;
+    margin: 123px 352px 124px 352px;
+}
+
+.foto-omelette{
+    width: 100%;
+    border-radius: 12px;
+
+}
+
+.contenedor-texto {
+    display:flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+}
+
+.contenedor-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+h1 {
+    font-family: var(--fuente-principal);
+    font-weight: 400;
+    color: var(--Color-texto);
+}
+
+p {
+    font-family: var(--fuente-secundaria);
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+
+.contenedor-tiempo {
+    background-color: var(--color-tiempo);
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+    border-radius: 12px;
+    font-family: var(--fuente-secundaria);
+    width: 100%;
+    
+}
+
+.contenedor-tiempo ul li::marker {
+    color: var(--color-texto-tiempo);
+}
+
+.bold{
+    font-family: var(--fuente-secundaria);
+    color: var(--bold);
+    font-weight: 800;
+}
+
+ul, ol{
+    color: var(--color-texto-tiempo);
+    gap: 8px;
+    padding-left: 8px;
+    
+}
+
+
+
+.titulo-prep {
+    font-family: var(--fuente-secundaria);
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--color-texto-tiempo);
+}
+
+
+hr {
+    background-color: var(--linea);
+    height: 1px;
+    width: 656px;
+  
+}
+
+
+.contenedor-ingredientes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.lista-ingredientes {
+    color: var(--Color-texto);
+    font-family: var(--fuente-secundaria);
+    font-weight: 400;
+    
+}
+
+.lista-ingredientes li::marker {
+    color: var(--titles);
+}
+
+h2 {
+    color: var(--titles);
+    font-size: 28px;
+    font-weight: 400;
+    font-family: var(--fuente-principal);
+}
+
+
+ol li::marker {
+    color: var(--titles);
+    font-family: var(--fuente-secundaria);
+    font-weight: 700;
+}
+
+
+
+.section-nutrition {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.name {
+    font-family: var(--fuente-secundaria);
+    font-weight: 400;
+
+}
+
+.numeros {
+    font-family: var(--fuente-secundaria);
+    color: var(--titles);
+    font-weight: 700;
+
+}
+
+table {
+   width: 100%;
+   border-collapse: collapse;
+ 
+}
+
+tr {
+border-bottom: 1px solid var(--linea);
+}
+
+td {
+padding: 12px
+}
+
+.linea-abajo {
+    border-bottom: 0;
+}
+    
+
+
+
+
+
+
+
+
+
